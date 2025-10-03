@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KEVINMKR — Kişisel Sayfa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(180deg, #0b0d10, #0a0c0f);
+      color: #e6e9ee;
+      text-align: center;
+    }
+    header {
+      padding: 20px;
+      font-size: 24px;
+      font-weight: 800;
+      background: rgba(255,255,255,0.05);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    h1 {
+      margin-top: 60px;
+      font-size: 48px;
+      background: linear-gradient(135deg, #7c5cff, #00d1ff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    p {
+      max-width: 600px;
+      margin: 20px auto;
+      color: #b6bcc8;
+    }
+    .btn {
+      display: inline-block;
+      margin: 12px;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #7c5cff, #00d1ff);
+      color: #0a0c0f;
+    }
+    .btn-ghost {
+      border: 1px solid rgba(255,255,255,0.2);
+      color: #e6e9ee;
+    }
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      font-size: 14px;
+      color: #b6bcc8;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>KEVINMKR</header>
+  <main>
+    <h1>Merhaba 👋 Ben KEVINMKR</h1>
+    <p>Oyun/mod geliştirme, Discord botları ve web tasarımı ile ilgileniyorum. Bu sayfada projelerim ve iletişim bilgilerim olacak.</p>
+    <a href="#projeler" class="btn btn-primary">Projelerim</a>
+    <a href="#iletisim" class="btn btn-ghost">İletişim</a>
+  </main>
+  <footer>
+    © <span id="year"></span> KEVINMKR. Tüm hakları saklıdır.
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
